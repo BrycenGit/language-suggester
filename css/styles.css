@@ -2,8 +2,10 @@
   margin-top: 10%;
   margin-bottom: 40px;
 }
-
-
+#error {
+  display: none;
+}
+ 
 #ruby {
   display: none;
 }

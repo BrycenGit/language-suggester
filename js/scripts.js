@@ -14,8 +14,25 @@ $(document).ready(function() {
     console.log(answer3);
     console.log(answer4);
     console.log(answer5);
+    const addTotal = (answer1) + (answer2) + (answer3) + (answer4) + (answer5); 
+    console.log(addTotal);
+    const result = (Math.round(addTotal/5));
+    console.log(result);
 
+    if (result > 3) {
+      $("#ruby").show();
+    } else if (result === 3) {
+      $("#python").show();
+    } else {
+      $("#cSharp").show();
+    }
     
+
+    //if (answer1) === NaN || (answer2) === NaN || (answer3) === NaN || (answer4) === NaN || (answer5) === NaN) {
+    //  alert('please finish survey!');
+    //}
+
+
     event.preventDefault();
   });
 });
