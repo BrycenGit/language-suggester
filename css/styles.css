@@ -31,6 +31,9 @@
   height: auto;
   border-radius: 8px;
 }
+.hide-form {
+  display: none;
+}
 #error {
   display: none;
 }

@@ -2,6 +2,13 @@
   
 
 $(document).ready(function() {
+  $("#nameForm").submit(function(event) {
+    event.preventDefault();
+    const name = $("input#name").val();
+    $(".name-form").hide();
+    $(".hide-form").show();
+    $(".personName").text(name);
+  }); 
   $("#formOne").submit(function(event) {
     const answer1 = parseInt($("input:radio[name=q1]:checked").val());
     const answer2 = parseInt($("input:radio[name=q2]:checked").val());
