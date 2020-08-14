@@ -29,6 +29,8 @@ $(document).ready(function() {
       $("#error").hide();
     } else if (!answer1 || !answer2 || !answer3 || !answer4 || !answer5) {
       $("#error").show();
+      $('body').css("background-color", "#0843FF");
+      $('#error').css("color", "white");
       $(".hide-form").hide();
     } else if (result === 3) {
       $("#python").show();
