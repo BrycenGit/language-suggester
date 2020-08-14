@@ -31,7 +31,16 @@
   height: auto;
   border-radius: 8px;
 }
+.hide-form {
+  display: none;
+}
 #error {
+  display: none;
+}
+.yesNo {
+  display: none;
+}
+.choseNo {
   display: none;
 }
 #ruby {
