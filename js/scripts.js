@@ -2,6 +2,8 @@
   
 
 $(document).ready(function() {
+
+
   $("#formOne").submit(function(event) {
 
     const answer1 = parseInt($("input:radio[name=q1]:checked").val());
@@ -43,6 +45,17 @@ $(document).ready(function() {
 
     }
     event.preventDefault();
-
+    $("button").click(function(event){
+    event.preventDefault();
+    location.reload(true);
   });
+  
+  });
+
+
+  // $("button").click(function(event){
+  //   event.preventDefault();
+  //   location.reload(true);
+  // });
+
 });
