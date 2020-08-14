@@ -2,10 +2,7 @@
   
 
 $(document).ready(function() {
-
-
   $("#formOne").submit(function(event) {
-
     const answer1 = parseInt($("input:radio[name=q1]:checked").val());
     const answer2 = parseInt($("input:radio[name=q2]:checked").val());
     const answer3 = parseInt($("input:radio[name=q3]:checked").val());
@@ -32,32 +29,24 @@ $(document).ready(function() {
       $('body').css("background-color", "#0843FF");
       $('#error').css("color", "white");
       $(".hide-form").hide();
-    } else if (result === 3) {
-      $("#python").show();
-      $(".hide-form").hide();
-      $("#cSharp").hide();
-      $("#ruby").hide();
-      $("#error").hide();
-    } else {
+    } else if (result < 2) {
       $("#cSharp").show();
       $(".hide-form").hide();
       $("#python").hide();
       $("#ruby").hide();
       $("#error").hide();
-
+    } else {
+      $("#python").show();
+      $(".hide-form").hide();
+      $("#cSharp").hide();
+      $("#ruby").hide();
+      $("#error").hide();
     }
+
     event.preventDefault();
     $("button").click(function(event){
     event.preventDefault();
     location.reload(true);
+    });
   });
-  
-  });
-
-
-  // $("button").click(function(event){
-  //   event.preventDefault();
-  //   location.reload(true);
-  // });
-
 });
