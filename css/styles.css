@@ -2,10 +2,21 @@
   margin-top: 10%;
   margin-bottom: 40px;
 }
+
+.language-img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.gif {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 #error {
   display: none;
 
-  
 }
  
 #ruby {
