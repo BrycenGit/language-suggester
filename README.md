@@ -15,6 +15,9 @@ _In this application users will answer multiple choice questions about there pre
 * _drag index.html file into your browser_
 * _you can also deploy gh-pages (see below)_
 
+## Repository
+* [gh-pages](https://brycengit.github.io/language-suggester/)
+
 
 ## Known Bugs
 
