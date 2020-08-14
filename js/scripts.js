@@ -6,9 +6,23 @@ $(document).ready(function() {
     event.preventDefault();
     const name = $("input#name").val();
     $(".name-form").hide();
-    $(".hide-form").show();
+    $(".yesNo").show();
     $(".personName").text(name);
-  }); 
+  });
+  $("#clickYes").click(function(event) {
+    event.preventDefault();
+    $(".hide-form").show();
+    $(".yesNo").hide();
+  });
+  $("#clickNo").click(function(event) {
+    event.preventDefault();
+    $(".choseNo").show();
+    $(".yesNo").hide();
+    $("button").click(function(event){
+      event.preventDefault();
+      location.reload(true);
+    });
+  });
   $("#formOne").submit(function(event) {
     const answer1 = parseInt($("input:radio[name=q1]:checked").val());
     const answer2 = parseInt($("input:radio[name=q2]:checked").val());
@@ -51,9 +65,10 @@ $(document).ready(function() {
     }
 
     event.preventDefault();
+
     $("button").click(function(event){
-    event.preventDefault();
-    location.reload(true);
+      event.preventDefault();
+      location.reload(true);
     });
   });
 });

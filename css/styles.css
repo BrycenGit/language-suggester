@@ -37,6 +37,12 @@
 #error {
   display: none;
 }
+.yesNo {
+  display: none;
+}
+.choseNo {
+  display: none;
+}
 #ruby {
   display: none;
 }
