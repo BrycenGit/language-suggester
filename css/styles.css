@@ -9,6 +9,16 @@
   border-radius: 8px;
 }
 
+.redbox {
+  background-color: red;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+
+}
+
+.redbox:hover, .redbox:active {font-size: 170%;}
+
 .gif {
   width: 100%;
   height: auto;
