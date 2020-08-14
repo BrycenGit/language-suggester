@@ -1,0 +1,17 @@
+.container {
+  margin-top: 10%;
+  margin-bottom: 40px;
+}
+
+
+#ruby {
+  display: none;
+}
+
+#cSharp {
+  display: none;
+}
+
+#python {
+  display: none;
+}
