@@ -5,9 +5,11 @@ $(document).ready(function() {
   $("#nameForm").submit(function(event) {
     event.preventDefault();
     const name = $("input#name").val();
+    const nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
+    console.log(nameCapitalized);
     $(".name-form").hide();
     $(".yesNo").show();
-    $(".personName").text(name);
+    $(".personName").text(nameCapitalized);
   });
   $("#clickYes").click(function(event) {
     event.preventDefault();
