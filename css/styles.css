@@ -17,7 +17,9 @@
 
 }
 
-.redbox:hover, .redbox:active {font-size: 170%;}
+.redbox:hover, .redbox:active {
+  font-size: 170%;
+}
 
 .gif {
   width: 100%;
