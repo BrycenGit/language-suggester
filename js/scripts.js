@@ -21,10 +21,13 @@ $(document).ready(function() {
 
     if (result > 3) {
       $("#ruby").show();
+      $(".hide-form").hide();
     } else if (result === 3) {
       $("#python").show();
+      $(".hide-form").hide();
     } else {
       $("#cSharp").show();
+      $(".hide-form").hide();
     }
     
 
@@ -34,5 +37,6 @@ $(document).ready(function() {
 
 
     event.preventDefault();
+
   });
 });
