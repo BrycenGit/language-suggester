@@ -22,20 +22,26 @@ $(document).ready(function() {
     if (result > 3) {
       $("#ruby").show();
       $(".hide-form").hide();
+      $("#python").hide();
+      $("#cSharp").hide();
+      $("#error").hide();
+    } else if (!answer1 || !answer2 || !answer3 || !answer4 || !answer5) {
+      $("#error").show();
+      $(".hide-form").hide();
     } else if (result === 3) {
       $("#python").show();
       $(".hide-form").hide();
+      $("#cSharp").hide();
+      $("#ruby").hide();
+      $("#error").hide();
     } else {
       $("#cSharp").show();
       $(".hide-form").hide();
+      $("#python").hide();
+      $("#ruby").hide();
+      $("#error").hide();
+
     }
-    
-
-    //if (answer1) === NaN || (answer2) === NaN || (answer3) === NaN || (answer4) === NaN || (answer5) === NaN) {
-    //  alert('please finish survey!');
-    //}
-
-
     event.preventDefault();
 
   });
